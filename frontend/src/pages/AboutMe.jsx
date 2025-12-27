@@ -7,7 +7,7 @@ const education = [
     school: "VIT-AP University",
     degree: "B.Tech in Computer Science",
     date: "2022 - Present",
-    grade: "CGPA: 8.0/10.0",
+    grade: "CGPA: 8.10/10.0",
     details: "Specializing in Distributed Systems and Cloud Computing."
   },
   {
