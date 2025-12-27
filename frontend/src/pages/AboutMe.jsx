@@ -108,7 +108,7 @@ const About = () => {
                  <div>
                    <p className="text-zinc-500 text-xs uppercase mb-1">Base of Operations</p>
                    <p className="text-lg flex items-center gap-2">
-                      <Globe size={16} className="text-blue-500"/> Greater Noida, India
+                      <Globe size={16} className="text-blue-500"/> New Delhi, India
                    </p>
                  </div>
                  <div>
