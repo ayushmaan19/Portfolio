@@ -24,10 +24,22 @@ const About = () => {
   const [isAtBottom, setIsAtBottom] = useState(false);
   const scrollRef = useRef(null);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText("ayushmaan1092003@gmail.com");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000); 
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("ayushmaan1092003@gmail.com");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = "ayushmaan1092003@gmail.com";
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   const handleScroll = () => {
