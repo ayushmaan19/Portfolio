@@ -164,17 +164,17 @@ const About = () => {
                   <section>
                     <h3 className="text-white font-bold text-lg mb-2">A Journey of Building, Learning, and Leading</h3>
                     <p>
-                      I am Ayushmaan Kumar Yadav, a computer science engineer driven by a deep curiosity for how technology can be structured, scaled, and applied to solve real-world problems. My journey into software engineering has not been a linear one shaped by shortcuts or surface-level achievements, but rather a steadily evolving path defined by discipline, experimentation, and a consistent desire to understand systems at their core—whether technical, organizational, or human.
+                      I am Ayushmaan Kumar Yadav, a computer science engineer driven by a deep curiosity for how technology can be structured, scaled, and applied to solve real-world problems. My journey into software engineering has not been a linear one shaped by shortcuts or surface-level achievements, but rather a steadily evolving path defined by discipline, experimentation, and a consistent desire to understand systems at their core whether technical, organizational, or human.
                     </p>
                     <p className="mt-4">
-                      From an early academic foundation in science and mathematics to building full-scale, production-ready platforms that serve real users, my growth has been anchored in one principle: meaningful engineering is created at the intersection of logic, responsibility, and impact.
+                      From an early academic foundation in science and mathematics to building full-scale, production ready platforms that serve real users, my growth has been anchored in one principle: meaningful engineering is created at the intersection of logic, responsibility, and impact.
                     </p>
                   </section>
 
                   <section>
                     <h3 className="text-white font-bold text-lg mb-2">Early Foundations and Academic Discipline</h3>
                     <p>
-                      My formal academic journey began with a strong grounding in physics, chemistry, and mathematics during my higher secondary education at DPS Kashipur, Uttarakhand. These years shaped my analytical thinking and introduced me to structured problem-solving.
+                      My formal academic journey began with a strong grounding in physics, chemistry, and mathematics during my higher secondary education at Delhi Public School, Kashipur, Uttarakhand. These years shaped my analytical thinking and introduced me to structured problem-solving.
                     </p>
                     <p className="mt-4">
                       In 2022, I enrolled in the Computer Science & Engineering program at Vellore Institute of Technology, Amaravati. University life was not just about academic rigor; it was a period of discovering how theory meets implementation. Concepts such as operating systems, computer networks, cryptography, and software engineering principles stopped being abstract ideas and became design constraints that influenced how I wrote code and architected systems.
@@ -187,10 +187,10 @@ const About = () => {
                       My strongest learning has always occurred through building. I believe projects are not merely portfolio artifacts; they are reflections of how an engineer thinks, handles complexity, and takes responsibility for outcomes.
                     </p>
                     <p className="mt-4">
-                      One of the most defining projects in my journey has been <strong>LegalEase (NyayaSetu)</strong>, a full-stack legal technology platform where I serve as the Lead Developer. LegalEase was conceptualized to address inefficiencies in traditional legal workflows by creating a unified digital ecosystem. Built using the MERN stack, it implements role-based authentication, secure document handling with AWS S3, and real-time communication via Socket.IO. The integration of an AI-powered legal assistant using Gemini and Groq APIs boosted operational efficiency by over 50%.
+                      One of the most defining projects in my journey has been <strong>LegalEase (NyayaSetu)</strong>, a full-stack legal technology platform where I serve as the Lead Developer. LegalEase was conceptualized to address inefficiencies in traditional legal workflows by creating a unified digital ecosystem. Built using the MERN stack, it implements role-based authentication, secure document handling with AWS S3, and real-time communication via Socket.IO. The integration of an AI-powered legal assistant using Gemini APIs boosted operational efficiency by over 50%.
                     </p>
                     <p className="mt-4">
-                      Another milestone was building an AI-powered <strong>Knowledge Base Search Engine</strong>. I led the development of a system capable of handling over 10,000 monthly document uploads with sub-second response times. Utilizing RAG (Retrieval-Augmented Generation), ChromaDB, and LangChain, this project taught me how to think about performance, scalability, and reliability as first-class requirements.
+                      Another milestone was building an AI-powered <strong>Knowledge Base Search Engine</strong>. I led the development of a system capable of handling over 10,000 monthly document uploads with subsecond response times. Utilizing RAG (Retrieval-Augmented Generation), ChromaDB, and LangChain, this project taught me how to think about performance, scalability, and reliability as first-class requirements.
                     </p>
                   </section>
 
@@ -224,7 +224,7 @@ const About = () => {
                   <section>
                     <h3 className="text-white font-bold text-lg mb-2">Beyond Technology</h3>
                     <p>
-                      Outside academics, competitive sports have shaped my discipline. Being a <strong>four-time university arm-wrestling champion</strong> and a two-time national-level powerlifting winner demanded consistency and mental strength. Additionally, my recognition in the UNICEF Heartfulness Essay Writing Competition reflects my ability to articulate ideas thoughtfully and connect technical reasoning with human values.
+                      Outside academics, competitive sports have shaped my discipline. Being a <strong>four-time university arm-wrestling champion</strong> and a two-time national level inter-university powerlifting winner demanded consistency and mental strength. Additionally, my recognition in the UNICEF Heartfulness Essay Writing Competition reflects my ability to articulate ideas thoughtfully and connect technical reasoning with human values.
                     </p>
                   </section>
 

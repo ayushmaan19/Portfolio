@@ -42,7 +42,7 @@ const Home = () => {
               <span className="text-muted">Scale and Stability.</span>
             </h1>
             <p className="text-lg text-muted max-w-xl leading-relaxed mb-10">
-              I design and build distributed infrastructure with a focus on clarity, reliability, and long-term maintainability. 
+              I design and build distributed infrastructure with a focus on clarity, reliability, and long term maintainability. 
               Currently architecting solutions for <span className="text-white font-medium">LegalEase</span>.
             </p>
             <div className="flex gap-4">
