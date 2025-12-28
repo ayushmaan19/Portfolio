@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight, Code, Bot, Cloud, Download } from 'lucide-react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { ArrowRight, ArrowUpRight,Code, Bot, Cloud } from 'lucide-react';
 import NetworkBackground from './components/NetworkBackground';
 import About from './pages/AboutMe'; 
-import ResumeViewer from './pages/ResumeViewer';
 import Contact from './components/Contact';
 import Certifications from './components/Certifications';
 import Experience from './components/Experience';
 import SelectedWork from './components/SelectedWork';    
 import TechProficiency from './components/TechProficiency'; 
+
 
 const techList = [
   { icon: Code, name: "MERN Stack Dev" },
@@ -49,7 +49,7 @@ const Home = () => {
               <Link to="/about" className="bg-white text-black px-8 py-4 font-semibold text-sm flex items-center gap-2 hover:bg-gray-200 transition-colors">
                 More About Me <ArrowRight size={16} />
               </Link>
-              <a href="/#contact" className="border border-border px-8 py-4 font-medium text-sm hover:bg-surface/50 backdrop-blur-sm transition-colors">
+              <a href="#contact" className="border border-border px-8 py-4 font-medium text-sm hover:bg-surface/50 backdrop-blur-sm transition-colors">
                 Contact Me
               </a>
             </div>
@@ -66,12 +66,14 @@ const Home = () => {
                   strokeWidth={0.8} 
                 />
                 
+                {/* UPDATED TEXT SIZING(text-2xl), bigger on desktop (text-4xl) */}
                 <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-zinc-400 mb-8">
                   {currentTech.name}
                 </h2>
               </div>
+          
+              </div>
           </div>
-        </div>
       </section>
 
       <SelectedWork />
@@ -92,79 +94,50 @@ const Home = () => {
   );
 };
 
-const AppContent = () => {
-  const location = useLocation();
-
-  return (
-    <div className="min-h-screen bg-background text-white selection:bg-blue-500/30 font-sans">
-      
-      {/* NAVBAR */}
-      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-          
-          {/* LOGO */}
-          <Link to="/" className="font-bold text-xl tracking-tighter flex items-center gap-2">
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-            AYUSHMAAN.DEV
-          </Link>
-
-          <div className="flex items-center gap-8">
-            {/* DESKTOP LINKS */}
-            <div className="hidden md:flex gap-8 text-xs font-mono text-muted uppercase tracking-widest">
-              <a href="/#work" className="hover:text-white transition-colors">Work</a>
-              <a href="/#experience" className="hover:text-white transition-colors">Experience</a>
-              <a href="/#certifications" className="hover:text-white transition-colors">Certifications</a>
-            </div>
-
-            {/* --- CONDITIONAL BUTTON LOGIC --- */}
-            <div>
-              {location.pathname !== '/resume' ? (
-                <Link 
-                  to="/resume"
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="group relative flex items-center gap-2 border border-white/20 bg-transparent px-5 py-2 text-xs font-mono uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black hover:pr-10"
-                >
-                  <span>Resume</span>
-                  <ArrowUpRight 
-                    size={14} 
-                    className="absolute right-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
-                  />
-                </Link>
-              ) : (
-                <a 
-                  href="/v34Elab.pdf" 
-                  download="Ayushmaan_Yadav_Resume.pdf"
-                  className="group flex items-center justify-center border border-white/20 bg-transparent px-3.5 py-3 text-white transition-all duration-300 hover:bg-white hover:text-black hover:border-white"
-                  title="Download Resume"
-                >
-                  <Download size={16} />
-                </a>
-              )}
-            </div>
-
-          </div>
-
-        </div>
-      </nav>
-
-      {/* MAIN CONTENT ROUTES */}
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<ResumeViewer />} />
-        </Routes>
-      </main>
-
-    </div>
-  );
-};
-
 const App = () => {
   return (
     <Router>
-      <AppContent />
+      <div className="min-h-screen bg-background text-white selection:bg-blue-500/30 font-sans">
+     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+          <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            
+            {/* LOGO */}
+            <Link to="/" className="font-bold text-xl tracking-tighter flex items-center gap-2">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+              AYUSHMAAN.DEV
+            </Link>
+
+            <div className="flex items-center gap-8">
+              {/* DESKTOP LINKS */}
+              <div className="hidden md:flex gap-8 text-xs font-mono text-muted uppercase tracking-widest">
+                <a href="#work" className="hover:text-white transition-colors">Work</a>
+                <a href="#experience" className="hover:text-white transition-colors">Experience</a>
+                <a href="#certifications" className="hover:text-white transition-colors">Certifications</a>
+              </div>
+
+              {/* EXPANSIVE RESUME BUTTON*/}
+              <a 
+                href="/v34Elab.pdf" 
+                target="_blank" 
+                className="group relative flex items-center gap-2 border border-white/20 bg-transparent px-5 py-2 text-xs font-mono uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black hover:pr-10"
+              >
+                <span>Resume</span>
+                <ArrowUpRight 
+                  size={14} 
+                  className="absolute right-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+                />
+              </a>
+            </div>
+
+          </div>
+        </nav>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+      </div>
     </Router>
   );
 };
