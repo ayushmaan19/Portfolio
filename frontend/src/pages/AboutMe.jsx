@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Terminal, ArrowLeft, Globe, Github, Linkedin, Mail, GraduationCap, Calendar, Award, Check } from 'lucide-react';
+import { Terminal, ArrowLeft, Code, Github, Linkedin, Mail, GraduationCap, Calendar, Award, Check, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const education = [
@@ -121,11 +121,11 @@ const About = () => {
                  </div>
 
                  <div className="md:col-span-2 border-t border-border pt-8 mt-4">
-                    <p className="text-zinc-500 text-xs uppercase mb-3">Connection Protocols</p>
-                    <div className="flex gap-6">
+                    <p className="text-zinc-500 text-xs uppercase mb-3 text-center md:text-left">Connection Protocols</p>
+                    <div className="flex gap-6 flex-wrap justify-center md:justify-start">
                         <a href="https://github.com/ayushmaan19" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors"><Github size={18} /> GitHub</a>
                         <a href="https://in.linkedin.com/in/ayushmaan-yadav-152b141b1" className="flex items-center gap-2 hover:text-blue-400 transition-colors"><Linkedin size={18} /> LinkedIn</a>
-                        
+                        <a href="https://codolio.com/profile/Ayush@22/card" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors"><Code size={18} />CodingProfile</a>
                         <button 
                           onClick={handleCopy} 
                           className="flex items-center gap-2 hover:text-blue-400 transition-colors focus:outline-none"

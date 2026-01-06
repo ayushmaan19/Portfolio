@@ -117,7 +117,7 @@ const App = () => {
 
               {/* EXPANSIVE RESUME BUTTON*/}
               <a 
-                href="/v34Elab.pdf" 
+                href="/v36Elab.pdf" 
                 target="_blank" 
                 className="group relative flex items-center gap-2 border border-white/20 bg-transparent px-5 py-2 text-xs font-mono uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black hover:pr-10"
               >
